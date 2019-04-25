@@ -15,3 +15,7 @@ from textblob import Word
 
 word = Word("equilibria")
 print(word.lemmatize())
+
+text_blob_object = TextBlob("Thiss is correcct senetenc.")
+print(text_blob_object.correct())
+#corrects "correcct" to "correct" and "sentenc" to "sentence". "Thiss" was corrected to "Hiss" rather than "This".
